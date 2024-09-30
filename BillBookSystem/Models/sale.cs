@@ -6,7 +6,7 @@ namespace BillBookSystem.Models
     public class sale
     {
         [Key]
-        //public int Id { get; set; }
+        public int Id { get; set; }
 
         public int BillTo { get; set; }
 
@@ -20,5 +20,6 @@ namespace BillBookSystem.Models
 
         [Column(TypeName = "decimal(10, 2)")]
         public decimal Amount { get; set; }
+        public DateTime DueDate { get; set; }
     }
 }
